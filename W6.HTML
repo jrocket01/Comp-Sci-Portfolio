@@ -1,0 +1,634 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="W6.CSS">
+    <title>What Do You Wanna Cook</title>
+    <!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+</style>
+</head>
+	<!-- HTML for SEARCH BAR -->
+    <p style="text-align:right">Note:Anything you enter in the text box and it will take you to google and not the search page. Also you will need to click on the images if you want to see the recipes. Whats more is you need to click the cobb salad image if you want to see the bacon burger recipe for reasons I don't know.</p>
+    //This is use for making a search bar that links to google when ever you type something in, as explain by the note...
+	<div id="tfheader">
+		<form id="tfnewsearch" method="get" action="http://google.com">
+		        <input type="text" class="tftextinput" name="SearchText" size="21" maxlength="120" placeholder="type in, go to google instantly..."/><input type="submit" value="search" class="tfbutton"/>
+		</form>
+	<div class="tfclear"></div>
+	</div>
+<body>
+    <div id="navbar">
+		<ul>
+        <li><a href="index.html">Welcome</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="HTML.html">HTML</a></li>
+        <li><a href="hardware.html">Hardware</a></li>
+        <li><a href="zombieblade.html">Zombie Walking</a></li>
+        <li><a href="w5.html">Pong</a></li>
+        <li><a href="W6.HTML">What Do You Wanna Cook?</a></li>
+        <li><a href="vindinium.html">What's Vindinium?</a></li>
+    </ul>
+	</div>
+    *//This is use to change the background color with the help of a drop down menu
+    <form name="bgcolorForm">Try it now: 
+<select onChange="if(this.selectedIndex!=0)
+document.bgColor=this.options[this.selectedIndex].value">
+<option value="choose">set background color    
+<option value="FFFFCC">light yellow
+<option value="CCFFFF">light blue
+<option value="CCFFCC">light green
+<option value="CCCCCC">gray
+<option value="FFFFFF">white
+<option value="FF0000">red
+</select></form>
+    <h1 style="text-align:center">What Do You Wanna Cook?</h1>
+    <h1>Here Are 10 Classic American Recipes</h1>
+    //This is use to show an image and recipe for a fried chicken recipes along with direction.
+    <h3></h3><ul><li><img id="friedchickenimage" src="//hostedmedia.reimanpub.com/TOH/Images/Photos/37/200x200/exps42345_TH1443683D33B.jpg"/><br/><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlTitle">Cornmeal Oven-Fried Chicken</a></li>
+    <h2>Total Time:</h2><p>Prep:20 min. Bake:40 min.</p> <h2>Makes:</h2><p>6 servings</p>
+    
+    <div style="display:none" id="friedchickeninfo">
+                                        <h4>Ingredients</h4>
+                                        <ul>
+                                                <li>
+                                                    <span>1/2 cup dry bread crumbs</span>
+                                                </li>
+                                                <li>
+                                                    <span>1/2 cup cornmeal</span>
+                                                </li>
+                                                <li>
+                                                    <span>1/3 cup grated Parmesan cheese</span>
+                                                </li>
+                                                <li>
+                                                    <span>1/4 cup minced fresh parsley <I>or</I> 4 teaspoons dried parsley flakes</span>
+                                                </li>
+                                                <li>
+                                                    <span>3/4 teaspoon garlic powder</span>
+                                                </li>
+                                                <li>
+                                                    <span>1/2 teaspoon salt</span>
+                                                </li>
+                                                <li>
+                                                    <span>1/2 teaspoon onion powder</span>
+                                                </li>
+                                                <li>
+                                                    <span>1/2 teaspoon dried thyme</span>
+                                                </li>
+                                                <li>
+                                                    <span>1/2 teaspoon pepper</span>
+                                                </li>
+                                                <li>
+                                                    <span>1/2 cup buttermilk</span>
+                                                </li>
+                                                <li>
+                                                    <span>1 broiler/fryer chicken (3 to 4 pounds), cut up and skin removed</span>
+                                                </li>
+                                                <li>
+                                                    <span>1 tablespoon butter, melted</span>
+                                                </li>
+                                        </ul>
+                                        <h4>Directions</h4>
+                                        <ol>
+                                                <li>
+                                                    <span >In a large resealable plastic bag, combine the first nine ingredients. Place the buttermilk in a shallow bowl. Dip chicken in buttermilk, then add to bag, a few pieces at a time, and shake to coat. </span>
+                                                </li>
+                                                <li>
+                                                    <span> Place in a 13-in. x 9-in. baking pan coated with cooking spray. Bake at 37 degrees; for 10 minutes; drizzle with butter. Bake 30-40 minutes longer or until juices run clear.</span>
+                                                </li>
+                                        </ol>
+    </div>
+    <li><a><img id="cobbsaladimage" src="//hostedmedia.reimanpub.com/TOH/Images/Photos/37/200x200/exps43589_SD1440074D25_WEB.jpg"/></a><br/><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlTitle">Cobb Salad with Chili-Lime Dressing</a></li>
+        <h2>Total Time:</h2><p>Prep/Total Time:25 min.</p> <h2>Makes:</h2><p>8 servings</p>
+        <div style="display:none" id="cobbsaladinfo">
+                                       <h4>Ingredients</h4>
+                                       <ul>
+                                           <li>
+                                               <span>1 can (4 ounces) chopped green chilies, undrained</span>
+                                           </li>
+                                           <li>
+                                               <span>2/3 cup sour cream</span>
+                                           </li>
+                                           <li>
+                                               <span>1/4 cup fresh cilantro leaves, coarsely chopped</span>
+                                           </li>
+                                           <li>
+                                               <span>2 tablespoons lime juice</span>
+                                           </li>
+                                           <li>
+                                               <span>1/2 teaspoon pepper</span>
+                                           </li>
+                                           <li>
+                                               <span>1/4 to 1/2 teaspoon hot pepper sauce</span>
+                                           </li>
+                                           <li>
+                                               <span>1/4 teaspoon salt</span>
+                                           </li>
+                                           <li>
+                                               <span>1 package (10 ounces) heart of ramaine salad mix</span>
+                                           </li>
+                                           <li>
+                                               <span>1 can (16 ounces) kidney beans, rinsed and drained</span>
+                                           </li>
+                                           <li>
+                                               <span>1 cup (4 ounces) shredded Monterey Jack cheese</span>
+                                           </li>
+                                           <li>
+                                               <span>1 cup chopped tomatoes</span>
+                                           </li>
+                                           <li>
+                                               <span>1 package (7-1/2 ounces) frozen diced cooked chicken breast, thawed</span>
+                                           </li>
+                                           <li>
+                                               <span>1 medium ripe avocado, peeled and cubed</span>
+                                           </li>
+                                           <li>
+                                               <span>1/2 cup chopped red onion</span>
+                                           </li>
+                                           <li>
+                                               <span>1/3 cup real bacon bits</span>
+                                           </li>
+                                       </ul>
+                                       <h4>Direction</h4>
+                                       <ol>
+                                           <li>
+                                               <span>Place the first seven ingredients in a food processor; cover and process until blended. Chill until serving.</span>
+                                           </li>
+                                           <li>
+                                               <span>In a large bowl, layer the salad mix, beans, cheese, tomatoes, chicken, avocado, onion and bacon bits. Drizzle with dressing.</span>
+                                           </li>
+            </ol>
+        </div>
+<li><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlImage"><img id="baconcheeseburgerimage" src="//hostedmedia.reimanpub.com/TOH/Images/Photos/37/200x200/exps48107_TH2379798C03_29_1b_WEB.jpg"/></a><br/><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlTitle">All-American Bacon Cheeseburgers</a></li>
+        <h2>Total Time</h2><p>Prep/Total Time:30 min.</p><h2>Makes:</h2><p>4 servings</p>
+        <div style="display:none" id="baconcheeseburgerinfo">
+                                      <h4>Ingredients</h4>
+                                      <ul>
+                                          <li>
+                                              <span>2 tablespoons finely chopped onion</span>
+                                          </li>
+                                          <li>
+                                              <span>2 tablespoons ketchup</span>
+                                          </li>
+                                          <li>
+                                              <span>1 garlic clove, minced</span>
+                                          </li>
+                                          <li>
+                                              <span>1 teaspoon sugar</span>
+                                          </li>
+                                          <li>
+                                              <span>1 teaspoon Worcestershire sauce</span>
+                                          </li>
+                                          <li>
+                                              <span>1 teaspoon steak sauce</span>
+                                          </li>
+                                          <li>
+                                              <span>1/4 teaspoon cider vinegar</span>
+                                          </li>
+                                          <li>
+                                              <span>1 pound ground beef</span>
+                                          </li>
+                                          <li>
+                                              <span>4 slices sharp cheddar cheese</span>
+                                          </li>
+                                          <li>
+                                              <span>4 hamburger buns, split and toasted</span>
+                                          </li>
+                                          <li>
+                                              <span>8 cooked bacon strips</span>
+                                          </li>
+                                          <li>
+                                              <span>Optional toppings: lettuce leaves and tomato, onion and pickle slices</span>
+                                          </li>
+            </ul>
+                                       <h4>Direction</h4>
+                                       <ol>
+                                           <li>
+                                               <span>In a large bowl, combine the first seven ingredients. Crumble beef over mixture and mix well. Shape into four patties.</span>
+                                           </li>
+                                           <li>
+                                               <span>Grill burgers, covered, over medium heat or broil 3 in. from the heat for 4-7 minutes on each side or until a thermometer reads 160° and juices run clear. Top with cheese. Grill 1 minute longer or until cheese is melted. Serve on buns with bacon and toppings of your choice.</span>
+                                           </li>
+        </ol>
+    </div>
+<li><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlImage"><img id="catfishsandwichimage" src="//hostedmedia.reimanpub.com/TOH/Images/Photos/37/200x200/exps50809_SD19999446D10_08_1b_WEB.jpg"/></a><br/><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlTitle">Catfish Sandwich</a></li>
+        <h2>Total Time:</h2><p>Prep/Total Time:30 min.</p><h2>Makes:</h2><p>4 servings</p>
+        <div style="display:none" id="catfishsandwichinfo">
+                                      <h4>Ingredients</h4>
+                                      <ul>
+                                          <h4>CAJUN COLESLAW:</h4>
+                                          <li>
+                                              <span>3-3/4 cups coleslaw mix</span>
+                                          </li>
+                                          <li>
+                                              <span>1/2 cup mayonnaise</span>
+                                          </li>
+                                          <li>
+                                              <span>3 tablespoons seafood cocktail sauce</span>
+                                          </li>
+                                          <li>
+                                              <span>1/2 teaspoon Cajun seasoning</span>
+                                          </li>
+                                          <li>
+                                              <span>1/4 teaspoon seafood seasoning</span>
+                                          </li>
+                                          <h4>SANDWHICHES:</h4>
+                                          <li>
+                                              <span>1/2 cup cornmeal</span>
+                                          </li>
+                                          <li>
+                                              <span>1/3 cup all-purpose flour</span>
+                                          </li>
+                                          <li>
+                                              <span>1 teaspoon salt</span>
+                                          </li>
+                                          <li>
+                                              <span>1 teaspoon Cajun seasoning</span>
+                                          </li>
+                                          <li>
+                                              <span>1/4 teaspoon seafood seasoning</span>
+                                          </li>
+                                          <li>
+                                              <span>2/3 cup buttermilk</span>
+                                          </li>
+                                          <li>
+                                              <span>4 catfish fillets (6 ounces each)</span>
+                                          </li>
+                                          <li>
+                                              <span>Oil for deep-fat frying</span>
+                                          </li>
+                                          <li>
+                                              <span>4 hoagie buns, split</span>
+                                          </li>
+            </ul>
+                                          <h4>Directions</h4>
+                                          <ol>
+                                              <li>
+                                                  <span>In a large bowl, toss the coleslaw ingredients; set aside.</span>
+                                              </li>
+                                              <li>
+                                                  <span>In a shallow bowl, combine the cornmeal, flour, salt, Cajun seasoning and seafood seasoning. Place buttermilk in another shallow bowl. Dip fish in buttermilk, then coat with cornmeal mixture.</span>
+                                              </li>
+                                              <li>
+                                                  <span>In an electric skillet, heat 1/4 in. of oil to 375°. Cook fillets for 2-3 minutes on each side or until fish flakes easily with a fork. Drain on paper towels.</span>
+                                              </li>
+                                              <li>
+                                                  <span>Place fish and coleslaw on bun bottoms; replace bun tops.</span>
+                                              </li>
+            </ol>
+        </div>
+        <li><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlImage"><img id="cityribsimage" src="//hostedmedia.reimanpub.com/TOH/Images/Photos/37/200x200/exps34696_RDS1872268A12_11_1bc_WEB.jpg"/></a><br/><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlTitle">Sweet 'n' Smoky Kansas City Ribs</a></li>
+        <h2>Total Time:</h2><p>Prep:35 min. + standing Grill:70 min.</p><h2>Makes:</h2><p>5 servings</p>
+        <div style="display:none" id="cityribsinfo">
+                                     <h4>Ingredients</h4>
+                                     <ul>
+                                         <li>
+                                             <span>1/3 cup packed brown sugar</span>
+                                         </li>
+                                         <li>
+                                             <span>2 teaspoons chicken bouillon granules</span>
+                                         </li>
+                                         <li>
+                                             <span>2 teaspoons paprika</span>
+                                         </li>
+                                         <li>
+                                             <span>2 teaspoons chilli powder</span>
+                                         </li>
+                                         <li>
+                                             <span>1 teaspoon ground cumin</span>
+                                         </li>
+                                         <li>
+                                             <span>3/4 teaspoon garlic powder</span>
+                                         </li>
+                                         <li>
+                                             <span>1/2 teaspoon each minced fresh basil, rosemary and sage</span>
+                                         </li>
+                                         <li>
+                                             <span>1/2 teaspoon ground celery seed</span>
+                                         </li>
+                                         <li>
+                                             <span>1/4 teaspoon ground coriander</span>
+                                         </li>
+                                         <li>
+                                             <span>1/8 teaspoon fennel seed, crushed</span>
+                                         </li>
+                                         <li>
+                                             <span>2 pork baby back ribs (about 5 pounds)</span>
+                                         </li>
+                                         <li>
+                                             <span>2 cups soaked wood chips (mequite, hickory or alder), optional</span>
+                                         </li>
+                                      <h4>SAUCE:</h4>
+                                         <li>
+                                             <span>1 large onion, chopped</span>
+                                         </li>
+                                         <li>
+                                             <span>2 tablespoons olive oil</span>
+                                         </li>
+                                         <li>
+                                             <span>1 tablespoons butter</span>
+                                         </li>
+                                         <li>
+                                             <span>2 tablespoons brown sugar</span>
+                                         </li>
+                                         <li>
+                                             <span>1 tablespoon Worcestershire sauce</span>
+                                         </li>
+                                         <li>
+                                             <span>1 teaspoon each minced fresh basil, marjoram and rosemary, crushed</span>
+                                         </li>
+                                         <li>
+                                             <span>1 teaspoon each minced fresh dill, sage and cilantro</span>
+                                         </li>
+                                         <li>
+                                             <span>1 teaspoon minced chives</span>
+                                         </li>
+                                         <li>
+                                             <span>1 bottle (18 ounces) barbecue sauce</span>
+                                         </li>
+        </ul>
+                                     <h4>Direction</h4>
+                                                <ol>
+                                                    <li>
+                                                        <span>In a small bowl, combine the brown sugar, bouillon, seasonings and herbs; rub over ribs. Let stand for 15 minutes.</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Prepare grill for indirect heat, using a drip pan. Add 1 cup of soaked wood chips if desired. Place ribs in a disposable foil pan. Grill, covered, over indirect medium heat for 30 minutes. Remove ribs from pan and place on grill rack over drip pan. Add remaining wood chips. Grill 30 minutes longer, turning occasionally.</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Meanwhile, in a small saucepan, saute onion in oil and butter until tender. Stir in the brown sugar, Worcestershire sauce and herbs; cook and stir for 1 minute. Add barbecue sauce. Bring to a boil. Reduce heat; simmer, uncovered, for 5 minutes. Baste ribs with sauce; grill for 10-15 minutes or until meat is tender, turning and basting occasionally.</span>
+                                                    </li>
+        </ol>
+    </div>
+    <li><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlImage"><img id="macaronimage" src="//hostedmedia.reimanpub.com/TOH/Images/Photos/37/200x200/exps37965_TH1443682D18A.jpg"/></a><br/><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlTitle">Double-Cheese Macaroni</a></li>
+    <h2>Total Time:</h2><p>Prep:25 min. Bake:20 min.</p><h2>Makes:</h2><p>12 servings</p>
+        <div style="display:none" id="macaroninfo">
+                                     <h4>Ingredients</h4>
+                                         <ul>
+                                         <li>
+                                             <span>1 package (16 ounces) elbow macaroni</span>
+                                         </li>
+                                         <li>
+                                             <span>3 cups (24 ounces) 4% cottage cheese</span>
+                                         </li>
+                                         <li>
+                                             <span>1/2 cup butter, cubbed</span>
+                                         </li>
+                                         <li>
+                                             <span>1/2 cup of all-purpose flour</span>
+                                         </li>
+                                         <li>
+                                             <span>1 teaspoon salt</span>
+                                         </li>
+                                         <li>
+                                             <span>1/2 teaspoon white pepper</span>
+                                         </li>
+                                         <li>
+                                             <span>1/4 teaspoon garlic salt</span>
+                                         </li>
+                                         <li>
+                                             <span>3 cups half-and-half cream</span>
+                                         </li>
+                                         <li>
+                                             <span>1 cup 2% milk</span>
+                                         </li>
+                                         <li>
+                                             <span>4 cups (16 ounces) shredded cheddar cheese</span>
+                                         </li>
+                                         <h4>TOPPING:</h4>
+                                         <li>
+                                             <span>1 cup dry bread crumbs</span>
+                                         </li>
+                                         <li>
+                                             <span>1/4 cup butter, melted</span>
+                                         </li>
+    </ul>
+                                       <h4>Directions</h4>
+    <ol>
+                                         <li>
+                                             <span>Cook macaroni according to package directions. Meanwhile, place cottage cheese in a food processor; cover and process until smooth. Set aside.</span>
+                                         </li>
+                                         <li>
+                                             <span>In a large saucepan, melt butter. Stir in the flour, salt, pepper and garlic salt until smooth. Gradually add cream and milk. Bring to a boil; cook and stir for 2 minutes or until thickened.</span>
+                                         </li>
+                                         <li>
+                                             <span>Drain macaroni; transfer to a large bowl. Add the cheddar cheese, cottage cheese and white sauce; toss to coat. Transfer to a greased 13-in. x 9-in. baking dish. (Dish will be full.) Combine bread crumbs and butter; sprinkle over the top.</span>
+                                         </li>
+                                         <li>
+                                             <span>Bake, uncovered, at 400 degrees Fahrenheit for 20-25 minutes or until bubbly.</span>
+                                         </li>
+    </ol>
+        </div>
+        <li><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlImage"><img id="dutchpieimage" src="//hostedmedia.reimanpub.com/TOH/Images/Photos/37/200x200/exps9010_MBM1450751D23.jpg"/></a><br/><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlTitle">Favorite Dutch Apple Pie</a></li>
+        <h2>Total Time:</h2><p>Prep:20 min. Bake:40 min. + cooling</p><h2>Makes:</h2><p>6-8 servings</p>
+        <div style="display:none" id="dutchpieinfo">
+                                        <h4>Ingredients</h4>
+                                             <ul>
+                                             <li>
+                                                 <span>2 cups all-purpose flour</span>
+                                             </li>
+                                             <li>
+                                                 <span>1 cup packed brown sugar</span>
+                                             </li>
+                                             <li>
+                                                 <span>1/2 cup quick-cooking oats</span>
+                                             </li>
+                                             <li>
+                                                 <span>3/4 cup better, melted</span>
+                                             </li>
+                                             <h4>FILLING:</h4>
+                                             <li>
+                                                 <span>2/3 cup sugar</span>
+                                             </li>
+                                             <li>
+                                                 <span>3 tablespoons cornstarch</span>
+                                             </li>
+                                             <li>
+                                                 <span>1-1/4 cups cold water</span>
+                                             </li>
+                                             <li>
+                                                 <span>3 cups diced peeled tart apples</span>
+                                             </li>
+                                             <li>
+                                                 <span>1 teaspoon vanilla extract</span>
+                                             </li>
+            </ul>
+                                          <h4>Directions</h4>
+            <ol>
+                                             <li>
+                                                 <span>In a large bowl, combine the flour, brown sugar, oats and butter; set aside 1 cup for topping. Press remaining crumb mixture into an ungreased 9-in. pie plate; set aside.</span>
+                                             </li>
+                                             <li>
+                                                 <span>For filling, combine the sugar, cornstarch and water in a large saucepan until smooth; bring to a boil. Cook and stir for 2 minutes or until thickened. Remove from the heat; stir in apples and vanilla.</span>
+                                             </li>
+                                             <li>
+                                                 <span>Pour into crust; top with reserved crumb mixture. Bake at 350° for 40-45 minutes or until crust is golden brown. Cool on a wire rack.</span>
+                                             </li>
+            </ol>
+        </div>
+        <li><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlImage"><img id="icecreamsodasimage" src="//hostedmedia.reimanpub.com/TOH/Images/Photos/37/200x200/exps26683_TH2379798C02_23_3b.jpg"/></a><br/><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlTitle">Old-Fashioned Ice Cream Sodas</a></li>
+        <h2>Total Time:</h2><p>Prep/Total Time: 15 min.</p><h2>Makes:</h2><p>4 servings</p>
+        <div style="display:none" id="icecreamsodasinfo">
+                                            <h4>Ingredients</h4>
+                                                <ul>
+                                                <li>
+                                                    <span>3/4 cup chocolate syrup</span>
+                                                </li>
+                                                <li>
+                                                    <span>1 cup milk</span>
+                                                </li>
+                                                <li>
+                                                    <span>4 cups carbonated water, chilled</span>
+                                                </li>
+                                                <li>
+                                                    <span>8 scoops chocolate ice cream (about 2-2/3 cups), divided</span>
+                                                </li>
+                                                <li>
+                                                    <span>Whipped cream in a can, optional</span>
+                                                </li>
+            </ul>
+                                            <h4>Directions</h4>
+            <ol>
+                                                <li>
+                                                    <span>Place 3 tablespoons chocolate syrup in each of four 16-oz. glasses. Add 1/4 cup milk and 1 cup carbonated water to each; stir until foamy. Add two scoops of ice cream to each glass. Top with whipped cream if desired.</span>
+                                                </li>
+            </ol>
+        </div>
+        <li><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlImage"><img id="maltedcookiesimage" src="//hostedmedia.reimanpub.com/TOH/Images/Photos/37/200x200/exps1304_TOHOH2257776A01_14_3b.jpg"/></a><br/><a id="ctl00_ctl00_MainContent_MainContent_ctl00_wpManager_wp1705746879_hlTitle">Chocolate Malted Cookies</a></li>
+        <h2>Total Time:</h2><p>Prep/Total Time: 30 min.</p><h2>Makes:</h2><p>18 servings</p>
+        <div style="display:none" id="maltedcookiesinfo">
+                                            <h4>Ingredients</h4>
+                                                <ul>
+                                                <li>
+                                                    <span>1 cup butter-flavored shortening</span>
+                                                </li>
+                                                <li>
+                                                    <span>1-1/4 cups packed brown sugar</span>
+                                                </li>
+                                                <li>
+                                                    <span>1/2 cup malted milk powder</span>
+                                                </li>
+                                                <li>
+                                                    <span>2 tablespoons chocolate syrup</span>
+                                                </li>
+                                                <li>
+                                                    <span>1 tablespoon vanilla extract</span>
+                                                </li>
+                                                <li>
+                                                    <span>1 egg</span>
+                                                </li>
+                                                <li>
+                                                    <span>2 cups all-purpose flour</span>
+                                                </li>
+                                                <li>
+                                                    <span>1 teaspoon baking soda</span>
+                                                </li>
+                                                <li>
+                                                    <span>1/2 teaspoon salt</span>
+                                                </li>
+                                                <li>
+                                                    <span>1-1/2 cups semisweet choclate chunks</span>
+                                                </li>
+                                                <li>
+                                                    <span>1 cup milk choclate chips</span>
+                                                </li>
+            </ul>
+                                         <h4>Directions</h4>
+                                  <ol>
+                                                <li>
+                                                    <span>In a large bowl, beat the shortening, brown sugar, malted milk powder, chocolate syrup and vanilla for 2 minutes. Add egg.</span>
+                                                </li>     
+                                                <li>
+                                                    <span>Combine the flour, baking soda and salt; gradually add to creamed mixture, mixing well after each addition. Stir in chocolate chunks and chips.</span>
+                                                </li>
+                                                <li>
+                                                    <span>Shape into 2-in. balls; place 3 in. apart on ungreased baking sheets. Bake at 375° for 12-14 minutes or until golden brown. Cool for 2 minutes before removing to a wire rack.</span>
+                                                </li>
+            </ol>
+        </div>
+        <a><img id="deepdishpizzaimage" src="//hostedmedia.reimanpub.com/TOH/Images/Photos/37/200x200/exps9861_PWR1227364D1.jpg" class="fltlt" /></a><div class="top-recipe-content"><a>Deep-Dish Sausage Pizza</a><div class="rating"><a></a></div>
+        <h2>Total Time:</h2><p>Prep: 30 min. + rising Bake: 30 min. + standing</p><h2>Makes:</h2><p>8 servings</p>
+        <div style="display:none" id="deepdishpizzainfo">
+                                        <h4>Ingredients</h4>
+                                           <ul>
+                                               <li>
+                                                   <span>1 package (1/4 ounce) activate dry yeast</span>
+                                               </li>
+                                               <li>
+                                                   <span>2/3 cup warm water (110 to 115 fahrenheit)</span>
+                                               </li>
+                                               <li>
+                                                   <span>1-3/4 to 2 cups all-purpose flour</span>
+                                               </li>
+                                               <li>
+                                                   <span>1/4 cup vegatable oil</span>
+                                               </li>
+                                               <li>
+                                                   <span>1 teaspoon each dried oregano, basil and marjoram</span>
+                                               </li>
+                                               <li>
+                                                   <span>1/2 teaspoon garlic salt</span>
+                                               </li>
+                                               <li>
+                                                   <span>1/2 onion salt</span>
+                                               </li>
+                                               <h4>TOPPINGS:</h4>
+                                               <li>
+                                                   <span>4 cups (16 ounces) shredded part-skim mozzarella cheese, divided</span>
+                                               </li>
+                                               <li>
+                                                   <span>2 medium green peppers, chopped</span>
+                                               </li>
+                                               <li>
+                                                   <span>1 large onion, chopped</span>
+                                               </li>
+                                               <li>
+                                                   <span>1/2 teaspoon each dried oregano, basil and marjoram</span>
+                                               </li>
+                                               <li>
+                                                   <span>1 tablespoon olive oil</span>
+                                               </li>
+                                               <li>
+                                                   <span>1 cup granted Parmesan cheese</span>
+                                               </li>
+                                               <li>
+                                                   <span>1 pound Jimmy Dean® Premium Pork Sausage Roll, cooked and drained</span>
+                                               </li>
+                                               <li>
+                                                   <span>1 can (28 ounces) diced tomatoes, well drained</span>
+                                               </li>
+                                               <li>
+                                                   <span>2 ounces sliced pepproni</span>
+                                               </li>
+            </ul>
+                                        <h4>Directions</h4>
+                                           <ol>
+                                               <li>
+                                                   <span>In a large bowl, dissolve yeast in warm water. Add 1 cup flour, oil and seasonings; beat until smooth. Add enough remaining flour to form a soft dough.</span>
+                                               </li>
+                                               <li>
+                                                   <span>Turn onto a floured surface; knead until smooth and elastic, about 6-8 minutes. Place in a greased bowl; turn once to greased top. Cover and let rise in a warm place until doubled, about 1 hour.</span>
+                                               </li>
+                                               <li>
+                                                   <span>Punch dough down; roll out into a 15-in. circle. Transfer to a well-greased 12-in. heavy ovenproof skillet or round baking pan, letting dough drape over edges. Sprinkle with 1 cup mozzarella.</span>
+                                               </li>
+                                               <li>
+                                                   <span>In a skillet, saute the green peppers, onion and seasonings in oil until tender; drain. Layer half of the mixture over crust. Layer with half of the Parmesan, sausage and tomatoes. Sprinkle with 2 cups mozzarella. Repeat layers. Fold crust over to form an edge.</span>
+                                               </li>
+                                               <li>
+                                                   <span>Bake for 400° for 20 minutes. Sprinkle with pepperoni and remaining mozzarella. Bake 10-15 minutes longer or until crust is browned. Let stand for 10 minutes before slicing.</span>
+                                               </li>
+            </ol>
+        </div>
+
+    <script src="W6.js"></script>    
+</body>
+    </html>

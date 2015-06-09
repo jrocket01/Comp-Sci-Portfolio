@@ -1,0 +1,37 @@
+body{
+  background-color:green;
+}
+
+#navbar{
+  text-align:center;
+}
+
+#navbar li{
+  display:inline;
+}
+tr{
+  height:50px;
+  width:100px;
+  border:14px solid black;
+  border-radius:9px;
+  margin:auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-left:10px;
+  margin-right:10px;
+}
+a {
+  font-size:25px;
+}
+#imgsrc2 {
+  height:200px;
+}
+#imgsrc4 {
+  height:200px;
+}
+#imgsrc5 {
+  height:200px;
+}
+#imgsrc6 {
+  height:200px;
+}
